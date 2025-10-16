@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "crops"
+    label: "Cây Trồng"
+    folder: "content/crops"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Tiêu đề", name: "title", widget: "string"}
+      - {label: "Tên cây", name: "name", widget: "string"}
+      - {label: "Mô tả", name: "description", widget: "text"}
+      - {label: "Thời gian trồng (ngày)", name: "duration", widget: "number"}
+      - {label: "Mùa trồng", name: "season", widget: "string"}
+      - {label: "Mọi tháng", name: "bestMonths", widget: "list", required: false}
+
+  - name: "formulas"
+    label: "Công Thức"
+    folder: "content/formulas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Tiêu đề", name: "title", widget: "string"}
+      - {label: "Danh mục", name: "category", widget: "select", options: ["thuốc bảo vệ", "phân bón", "đất trồng"]}
+      - {label: "Nội dung", name: "body", widget: "markdown"}
+
+  - name: "tips"
+    label: "Lưu Ý"
+    folder: "content/tips"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Tiêu đề", name: "title", widget: "string"}
+      - {label: "Nội dung", name: "body", widget: "markdown"}
+
+  - name: "settings"
+    label: "Cài Đặt"
+    folder: "content/settings"
+    create: true
+    files:
+      - file: "content/settings/general.yml"
+        label: "Cài Đặt Chung"
+        fields:
+          - {label: "Tiêu đề trang web", name: "site_title", widget: "string"}
+          - {label: "Mô tả", name: "description", widget: "text"}
+          - {label: "Logo", name: "logo", widget: "image"}
