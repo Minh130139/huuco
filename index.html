@@ -10,6 +10,9 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Netlify CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms-app.js"></script>
 </head>
 <body>
     <div id="root"></div>
@@ -1058,27 +1061,10 @@
                                     </div>
                                     <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-4">
                                         <h4 className="font-semibold text-orange-800 mb-3">📋 Nguyên tắc 5 KHÔNG trong nông nghiệp hữu cơ</h4>
-                                        <div className="grid md:grid-cols-5 gap-4 text-sm">
-                                            <div className="text-center">
-                                                <div className="text-2xl mb-2">🚫</div>
-                                                <div className="font-medium text-red-700">KHÔNG hóa chất BVTV</div>
-                                            </div>
-                                            <div className="text-center">
-                                                <div className="text-2xl mb-2">🚫</div>
-                                                <div className="font-medium text-red-700">KHÔNG phân bón hóa học</div>
-                                            </div>
-                                            <div className="text-center">
-                                                <div className="text-2xl mb-2">🚫</div>
-                                                <div className="font-medium text-red-700">KHÔNG chất kích thích tăng trưởng</div>
-                                            </div>
-                                            <div className="text-center">
-                                                <div className="text-2xl mb-2">🚫</div>
-                                                <div className="font-medium text-red-700">KHÔNG sản phẩm đột biến gen</div>
-                                            </div>
-                                            <div className="text-center">
-                                                <div className="text-2xl mb-2">🚫</div>
-                                                <div className="font-medium text-red-700">KHÔNG phân bắc</div>
-                                            </div>
+                                        <div className="text-sm">
+                                            <p className="font-medium text-red-700">
+                                                Không thuốc diệt cỏ; không thuốc trừ sâu; không chất bảo quản; không chất kích thích, tăng trưởng; không dư lượng hóa chất độc hại.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -1241,6 +1227,272 @@
                                                     <li>• <strong>Chất dính trên lá:</strong> Rầy mềm tiết mật ngọt</li>
                                                 </ul>
                                             </div>
+                                        
+
+                                        {/* Natural Predators */}
+                                <div className="mb-8">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                                        <span className="text-2xl">🐞</span>
+                                        Thu hút và nuôi dưỡng thiên địch
+                                    </h3>
+                                    <div className="grid gap-6">
+                                        {/* Ladybug */}
+                                        <div className="border border-red-200 rounded-lg p-6 bg-red-50">
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <span className="text-2xl">🐞</span>
+                                                <h4 className="text-lg font-semibold text-red-800">Bọ rùa (Ladybug/Coccinellidae)</h4>
+                                                <span className="bg-red-200 text-red-800 px-2 py-1 rounded text-xs">Diệt rầy mềm</span>
+                                            </div>
+                                            <div className="grid md:grid-cols-3 gap-4">
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-red-700 mb-2">🎯 Mồi săn:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Rầy mềm (Aphids)</li>
+                                                        <li>• Nhện đỏ</li>
+                                                        <li>• Trứng sâu nhỏ</li>
+                                                        <li>• <strong>Hiệu quả:</strong> 50-100 con rầy/ngày</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-red-700 mb-2">🌼 Thu hút:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Trồng hoa cúc vạn thọ</li>
+                                                        <li>• Hoa hướng dương nhỏ</li>
+                                                        <li>• Cây thì là</li>
+                                                        <li>• Cây rau mùi</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-red-100 rounded p-3">
+                                                    <h5 className="font-semibold text-red-800 mb-2">🏠 Nơi ẩn náu:</h5>
+                                                    <ul className="text-sm text-red-900 space-y-1">
+                                                        <li>✓ Để cỏ hoang quanh vườn</li>
+                                                        <li>✓ Đống đá nhỏ</li>
+                                                        <li>✓ Thân cây khô</li>
+                                                        <li>✓ KHÔNG phun thuốc hóa học</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Parasitic Wasps */}
+                                        <div className="border border-yellow-200 rounded-lg p-6 bg-yellow-50">
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <span className="text-2xl">🐝</span>
+                                                <h4 className="text-lg font-semibold text-yellow-800">Ong ký sinh (Parasitic Wasps)</h4>
+                                                <span className="bg-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs">Kiểm soát sâu non</span>
+                                            </div>
+                                            <div className="grid md:grid-cols-3 gap-4">
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-yellow-700 mb-2">🎯 Mồi săn:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Sâu cuốn lá</li>
+                                                        <li>• Sâu đục quả</li>
+                                                        <li>• Trứng bướm đêm</li>
+                                                        <li>• <strong>Cách thức:</strong> Đẻ trứng vào sâu</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-yellow-700 mb-2">🌼 Thu hút:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Hoa cải xanh để hạt</li>
+                                                        <li>• Hoa cúc tần</li>
+                                                        <li>• Cây húng quế</li>
+                                                        <li>• Hoa ngò (cilantro)</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-yellow-100 rounded p-3">
+                                                    <h5 className="font-semibold text-yellow-800 mb-2">💡 Lưu ý:</h5>
+                                                    <ul className="text-sm text-yellow-900 space-y-1">
+                                                        <li>✓ Ong nhỏ 1-2mm, không đốt người</li>
+                                                        <li>✓ Cần phấn hoa để sống</li>
+                                                        <li>✓ Tránh thuốc diệt côn trùng</li>
+                                                        <li>✓ Để 5-10% đất hoang</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Lacewings */}
+                                        <div className="border border-green-200 rounded-lg p-6 bg-green-50">
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <span className="text-2xl">🦋</span>
+                                                <h4 className="text-lg font-semibold text-green-800">Rận đầu vàng (Green Lacewing)</h4>
+                                                <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs">Diệt rầy + thrip</span>
+                                            </div>
+                                            <div className="grid md:grid-cols-3 gap-4">
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-green-700 mb-2">🎯 Mồi săn:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Rầy mềm</li>
+                                                        <li>• Thrip (ruồi vàng)</li>
+                                                        <li>• Nhện đỏ</li>
+                                                        <li>• Trứng sâu bướm</li>
+                                                        <li>• <strong>Hiệu quả:</strong> Ấu trùng săn hung dữ</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-green-700 mb-2">🌼 Thu hút:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Hoa thì là nhỏ</li>
+                                                        <li>• Hoa cải dại</li>
+                                                        <li>• Cây đậu đỗ</li>
+                                                        <li>• <strong>Mật hoa:</strong> Nguồn dinh dưỡng</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-green-100 rounded p-3">
+                                                    <h5 className="font-semibold text-green-800 mb-2">💡 Đặc điểm:</h5>
+                                                    <ul className="text-sm text-green-900 space-y-1">
+                                                        <li>✓ Cánh màu xanh trong suốt</li>
+                                                        <li>✓ Bay về đèn ban đêm</li>
+                                                        <li>✓ Ấu trùng màu nâu</li>
+                                                        <li>✓ Rất hiệu quả trong nhà kính</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Frogs & Toads */}
+                                        <div className="border border-teal-200 rounded-lg p-6 bg-teal-50">
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <span className="text-2xl">🐸</span>
+                                                <h4 className="text-lg font-semibold text-teal-800">Ếch nhái (Frogs & Toads)</h4>
+                                                <span className="bg-teal-200 text-teal-800 px-2 py-1 rounded text-xs">Diệt ốc sên + châu chấu</span>
+                                            </div>
+                                            <div className="grid md:grid-cols-3 gap-4">
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-teal-700 mb-2">🎯 Mồi săn:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Ốc sên</li>
+                                                        <li>• Châu chấu</li>
+                                                        <li>• Sâu bướm lớn</li>
+                                                        <li>• Bọ xít</li>
+                                                        <li>• <strong>Hoạt động:</strong> Ban đêm + sáng sớm</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-teal-700 mb-2">🏠 Tạo môi trường:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Ao nước nhỏ (1-2m²)</li>
+                                                        <li>• Đống đá/gạch có khe</li>
+                                                        <li>• Bụi cây rậm</li>
+                                                        <li>• Độ ẩm cao</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-teal-100 rounded p-3">
+                                                    <h5 className="font-semibold text-teal-800 mb-2">⚠️ Bảo vệ:</h5>
+                                                    <ul className="text-sm text-teal-900 space-y-1">
+                                                        <li>✓ KHÔNG dùng thuốc trừ sâu</li>
+                                                        <li>✓ Giữ nguồn nước sạch</li>
+                                                        <li>✓ Tránh nuôi vịt (ăn ếch con)</li>
+                                                        <li>✓ Để cỏ dại quanh ao</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Spiders */}
+                                        <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <span className="text-2xl">🕷️</span>
+                                                <h4 className="text-lg font-semibold text-gray-800">Nhện (Spiders)</h4>
+                                                <span className="bg-gray-200 text-gray-800 px-2 py-1 rounded text-xs">Diệt ruồi + muỗi</span>
+                                            </div>
+                                            <div className="grid md:grid-cols-3 gap-4">
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-gray-700 mb-2">🎯 Mồi săn:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Ruồi trắng</li>
+                                                        <li>• Thrip</li>
+                                                        <li>• Muỗi</li>
+                                                        <li>• Bọ nhảy</li>
+                                                        <li>• <strong>Loại:</strong> Nhện nhảy, nhện sói</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-gray-700 mb-2">🏠 Môi trường:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• Cỏ dại thấp</li>
+                                                        <li>• Gốc cây</li>
+                                                        <li>• Thân cây khô</li>
+                                                        <li>• Khe đá/gạch</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-gray-100 rounded p-3">
+                                                    <h5 className="font-semibold text-gray-800 mb-2">💡 Lợi ích:</h5>
+                                                    <ul className="text-sm text-gray-900 space-y-1">
+                                                        <li>✓ Săn mồi liên tục 24/7</li>
+                                                        <li>✓ Không gây hại cây trồng</li>
+                                                        <li>✓ Kiểm soát côn trùng bay</li>
+                                                        <li>✓ Loại an toàn (không cắn người)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* General Tips for Attracting Natural Predators */}
+                                    <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-lg p-6 mt-6">
+                                        <h4 className="text-lg font-semibold text-green-800 mb-4 flex items-center gap-2">
+                                            <span className="text-2xl">🌿</span>
+                                            Nguyên tắc chung để thu hút thiên địch
+                                        </h4>
+                                        <div className="grid md:grid-cols-2 gap-6">
+                                            <div>
+                                                <h5 className="font-semibold text-green-700 mb-3">✅ NÊN LÀM:</h5>
+                                                <ul className="space-y-2 text-sm text-gray-700">
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-green-600 mt-1">✓</span>
+                                                        <span><strong>Đa dạng hoa:</strong> Trồng 5-10% diện tích là hoa (cúc, hướng dương, thì là)</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-green-600 mt-1">✓</span>
+                                                        <span><strong>Để bãi hoang:</strong> 5-10% đất không canh tác cho thiên địch ẩn náu</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-green-600 mt-1">✓</span>
+                                                        <span><strong>Nguồn nước:</strong> Ao nhỏ, chậu nước để ếch, nhái sinh sản</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-green-600 mt-1">✓</span>
+                                                        <span><strong>Nơi trú ẩn:</strong> Đống đá, thân cây khô, cỏ khô</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-green-600 mt-1">✓</span>
+                                                        <span><strong>Kiên nhẫn:</strong> Cần 2-3 tháng để thiên địch tập trung</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 className="font-semibold text-red-700 mb-3">❌ TRÁNH LÀM:</h5>
+                                                <ul className="space-y-2 text-sm text-gray-700">
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-red-600 mt-1">✗</span>
+                                                        <span><strong>Thuốc hóa học:</strong> Giết cả thiên địch lẫn sâu hại</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-red-600 mt-1">✗</span>
+                                                        <span><strong>Cày xới sâu:</strong> Phá hủy tổ ong, nhện dưới đất</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-red-600 mt-1">✗</span>
+                                                        <span><strong>Dọn sạch quá mức:</strong> Thiên địch không có nơi trú ẩn</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-red-600 mt-1">✗</span>
+                                                        <span><strong>Đèn quá sáng ban đêm:</strong> Làm rối loạn côn trùng có ích</span>
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <span className="text-red-600 mt-1">✗</span>
+                                                        <span><strong>Monoculture:</strong> Trồng 1 loại cây → thiếu đa dạng sinh học</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="mt-4 bg-green-100 rounded p-3 text-sm text-green-800">
+                                            <strong>💡 Mẹo vàng:</strong> Trồng xen canh: Rau → Hoa → Thảo mộc. Càng đa dạng, càng nhiều thiên địch!
+                                        </div>
+                                    </div>
+                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1558,6 +1810,75 @@
                                     </div>
                                 </div>
 
+                                {/* EM (Effective Microorganisms) */}
+                                <div className="mb-8">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                                        <span className="text-2xl">🧫</span>
+                                        Vi sinh vật hiệu quả (Effective Microorganisms)
+                                    </h3>
+                                    <div className="grid gap-6">
+                                        {/* EM Formula */}
+                                        <div className="border border-indigo-200 rounded-lg p-6 bg-indigo-50">
+                                            <div className="flex items-center gap-3 mb-4">
+                                                <span className="text-2xl">🧪</span>
+                                                <h4 className="text-lg font-semibold text-indigo-800">EM1 - Vi sinh vật gốc (EM Stock Solution)</h4>
+                                                <span className="bg-indigo-200 text-indigo-800 px-2 py-1 rounded text-xs">Cải tạo đất</span>
+                                            </div>
+                                            <div className="grid md:grid-cols-2 gap-6">
+                                                <div>
+                                                    <h5 className="font-semibold text-indigo-700 mb-3">📝 EM là gì?</h5>
+                                                    <p className="text-sm text-gray-700 mb-3">
+                                                        EM (Effective Microorganisms) là hỗn hợp gồm <strong>80+ loại vi sinh vật có ích</strong> bao gồm:
+                                                    </p>
+                                                    <ul className="space-y-1 text-sm text-gray-700">
+                                                        <li>• <strong>Lactobacillus:</strong> Vi khuẩn lactic</li>
+                                                        <li>• <strong>Saccharomyces:</strong> Nấm men</li>
+                                                        <li>• <strong>Bacillus:</strong> Vi khuẩn có ích</li>
+                                                        <li>• <strong>Vi khuẩn quang hợp</strong></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <h5 className="font-semibold text-indigo-700 mb-3">🛒 Mua hoặc nhân giống:</h5>
+                                                    <div className="text-sm text-gray-700 space-y-2">
+                                                        <p><strong>Mua sẵn:</strong> EM1, EMO, EM gốc tại cửa hàng nông nghiệp (50-100k/lít)</p>
+                                                        <p><strong>Tự nhân giống:</strong></p>
+                                                        <ul className="ml-4 space-y-1">
+                                                            <li>• 1 lít EM gốc</li>
+                                                            <li>• 1 lít mật mía/đường nâu</li>
+                                                            <li>• 18 lít nước sạch</li>
+                                                            <li>• Ủ 7-10 ngày = 20 lít EM</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="mt-4 grid md:grid-cols-2 gap-4">
+                                                <div className="bg-white rounded p-3">
+                                                    <h5 className="font-semibold text-indigo-700 mb-2">💧 Cách sử dụng:</h5>
+                                                    <ul className="text-sm text-gray-700 space-y-1">
+                                                        <li>• <strong>Ủ phân compost:</strong> 50ml EM/10kg phân → ủ nhanh, giảm mùi</li>
+                                                        <li>• <strong>Tưới gốc:</strong> 20-50ml EM/10l nước → 1-2 tuần/lần</li>
+                                                        <li>• <strong>Xử lý đất:</strong> 200ml EM/10l nước → 7 ngày trước trồng</li>
+                                                        <li>• <strong>Phun lá:</strong> 30ml EM/10l nước → 10-15 ngày/lần</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="bg-indigo-100 rounded p-3">
+                                                    <h5 className="font-semibold text-indigo-800 mb-2">✅ Lợi ích:</h5>
+                                                    <ul className="text-sm text-indigo-900 space-y-1">
+                                                        <li>✓ Cải tạo đất, tăng độ tơi xốp</li>
+                                                        <li>✓ Phân hủy chất hữu cơ nhanh hơn</li>
+                                                        <li>✓ Tăng hấp thu dinh dưỡng của cây</li>
+                                                        <li>✓ Ức chế nấm bệnh gây thối rễ</li>
+                                                        <li>✓ Khử mùi hôi (chuồng, ao, bể phân)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="mt-3 bg-amber-50 rounded p-3 text-xs text-amber-700">
+                                                ⚠️ <strong>Lưu ý:</strong> Không dùng EM với thuốc hóa học. Bảo quản nơi mát, tránh ánh sáng mạnh. pH tối ưu: 3.5-4.5 (chua nhẹ).
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 {/* Soil Mixes */}
                                 <div className="mb-8">
                                     <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
@@ -1729,45 +2050,6 @@
                                             </div>
                                         </div>
 
-                                        {/* Cold Composting */}
-                                        <div className="border border-blue-200 rounded-lg p-6 bg-blue-50">
-                                            <div className="flex items-center gap-3 mb-4">
-                                                <span className="text-2xl">❄️</span>
-                                                <h4 className="text-lg font-semibold text-blue-800">Phân compost lạnh (Cold Composting)</h4>
-                                                <span className="bg-blue-200 text-blue-800 px-2 py-1 rounded text-xs">6-12 tháng</span>
-                                            </div>
-                                            <div className="grid md:grid-cols-2 gap-6">
-                                                <div>
-                                                    <h5 className="font-semibold text-blue-700 mb-3">📝 Nguyên liệu:</h5>
-                                                    <ul className="space-y-2 text-sm text-gray-700">
-                                                        <li>• <strong>Rác thải nhà bếp:</strong> 40%</li>
-                                                        <li className="ml-4">- Vỏ rau quả, thức ăn thừa</li>
-                                                        <li>• <strong>Lá cây, cỏ khô:</strong> 40%</li>
-                                                        <li>• <strong>Giấy, carton:</strong> 15%</li>
-                                                        <li>• <strong>Đất vườn:</strong> 5% (vi sinh vật)</li>
-                                                        <li>• <strong>Trichoderma:</strong> 50g/1m³</li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h5 className="font-semibold text-blue-700 mb-3">⚗️ Quy trình ủ:</h5>
-                                                    <ol className="space-y-2 text-sm text-gray-700">
-                                                        <li><strong>Bước 1:</strong> Chặt nhỏ vật liệu 2-5cm</li>
-                                                        <li><strong>Bước 2:</strong> Xếp lớp trong thùng/hố</li>
-                                                        <li><strong>Bước 3:</strong> Tưới ẩm đều 50-60%</li>
-                                                        <li><strong>Bước 4:</strong> Phủ lá khô hoặc bạt</li>
-                                                        <li><strong>Bước 5:</strong> Lật 1 tháng/lần</li>
-                                                        <li><strong>Bước 6:</strong> Thu hoạch sau 6-12 tháng</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                            <div className="mt-4 bg-white rounded p-3">
-                                                <p className="text-sm text-blue-700">
-                                                    <strong>Ưu điểm:</strong> Đơn giản, ít công sức, phù hợp gia đình. 
-                                                    <strong>Lưu ý:</strong> Chậm, có thể có mùi nếu quá ẩm.
-                                                </p>
-                                            </div>
-                                        </div>
-
                                         {/* Bokashi Composting */}
                                         <div className="border border-purple-200 rounded-lg p-6 bg-purple-50">
                                             <div className="flex items-center gap-3 mb-4">
@@ -1812,16 +2094,16 @@
                                         <div className="border border-green-200 rounded-lg p-6 bg-green-50">
                                             <div className="flex items-center gap-3 mb-4">
                                                 <span className="text-2xl">🪱</span>
-                                                <h4 className="text-lg font-semibold text-green-800">Phân giun đất (Vermicompost)</h4>
+                                                <h4 className="text-lg font-semibold text-green-800">Phân Trùn Quế (Vermicompost)</h4>
                                                 <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs">3-6 tháng</span>
                                             </div>
                                             <div className="grid md:grid-cols-2 gap-6">
                                                 <div>
                                                     <h5 className="font-semibold text-green-700 mb-3">📝 Nguyên liệu:</h5>
                                                     <ul className="space-y-2 text-sm text-gray-700">
-                                                        <li>• <strong>Giun đất:</strong> 1-2kg</li>
-                                                        <li className="ml-4">- Giun quế (Eisenia fetida)</li>
-                                                        <li>• <strong>Thức ăn giun:</strong> 5-10kg/tuần</li>
+                                                        <li>• <strong>Trùn Quế:</strong> 1-2kg</li>
+                                                        <li className="ml-4">- Trùn quế (Eisenia fetida)</li>
+                                                        <li>• <strong>Thức ăn Trùn:</strong> 5-10kg/tuần</li>
                                                         <li className="ml-4">- Vỏ rau quả, rác nhà bếp</li>
                                                         <li className="ml-4">- Phân bò ủ, giấy carton</li>
                                                         <li>• <strong>Vật liệu lót:</strong> Rơm, lá khô</li>
@@ -1842,7 +2124,7 @@
                                             </div>
                                             <div className="mt-4 bg-white rounded p-3">
                                                 <p className="text-sm text-green-700">
-                                                    <strong>Sản phẩm:</strong> Phân rắn (vermicast) + nước giun (worm tea). 
+                                                    <strong>Sản phẩm:</strong> Phân Trùn (vermicast) + Dịch giun (worm tea). 
                                                     <strong>Chất lượng:</strong> Dinh dưỡng cao nhất, cây hấp thụ tốt.
                                                 </p>
                                             </div>
